@@ -1,0 +1,569 @@
+body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#333;
+    background-color: rgb(214, 229, 245);
+    
+    line-height: 1.4;
+}
+
+/* alla bilder */
+img{
+    max-width: 100%
+}
+
+/* grid container */
+.grid-container{
+    display:grid;
+    grid-gap: 20px;
+}
+
+/* navigering */
+
+/* navigering med UL-elemtentet */
+.top-nav ul{
+    display:grid;
+    grid-gap: 20px;
+    padding:0;
+    list-style:none;
+    grid-template-columns: 0.5fr repeat(3, 1fr);  
+    border-width: 50px;
+    background:  rgb(214, 229, 245);
+    min-height: 100px;
+}
+
+/* styling för varje enskild a-länk, homepage,om oss, kontakt */
+.top-nav a{
+    background-color: #333;
+    display: block; 
+    text-decoration: none; /* inga underlines */
+    padding: 1em 2em;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase; /* text stora bokstäver */
+    font-size: 1.1rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);; /* ger illusion av en box/ruta */
+    margin:10px;
+}
+
+/*loggan*/
+#logga {
+    background:url(https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?cs=srgb&dl=adventure-blur-close-up-346885.jpg&fm=jpg);
+    display: block; 
+    text-decoration: none; /* inga underlines */
+    padding: 1em 2em;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase; /* text stora bokstäver */
+    font-size: 1.1rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);; /* ger illusion av en box/ruta */
+    margin:10px;
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    max-width: 50%;
+    
+}
+
+/* Hover styling */
+.top-nav a:hover {
+background-color:#666;
+color:#fff;
+}
+
+/* CURRENT PAGE */
+.current{
+    color: #333;
+    background: #FFF;
+    border: #666 1px solid;
+}
+
+/* Top Container */
+.top-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    'head-section head-section head-section ' /* Här skapas ytor som heter showcase showcase top-box.a*/
+    'head-section head-section head-section ' /* Här skapas ytor som heter showcase showcase top-box.b */
+}
+/*asigning grid area*/
+
+/*asigning grid area showcase*/ 
+.head-section{
+    grid-area: head-section;
+    min-height: 400px; /*ökar "arean??"*/
+    background: url( https://images.unsplash.com/photo-1517660895948-131a6d6c55d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2693&q=80); /*bilden blir till bakgrund*/
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display:flex; /*använder flex för att align saker i  elementen som skapats med grid */
+    flex-direction: column;
+    align-items: start;
+    justify-content:flex-end;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+}
+
+.head-section h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+}
+
+.head-section p{
+font-size: 1.3rem;
+margin-top: 0;
+color:#fff;
+
+}
+
+/*styla info rutan */
+.info{
+display: grid;
+border-radius: 20px;
+box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+background:rgb(188, 214, 245);
+grid-gap:30px;
+grid-template-columns: repeat(3,1fr);/* delar den i två columner */
+padding: 3rem;
+}
+
+/*styla portfolio */
+.portfolio
+{
+ display: grid;
+ grid-gap: 10px;
+ grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+
+/*styla portfolios bilder img */
+
+.portfolio img{
+ width: 100%; /* bilderna ska fylla ut hela dess container */
+ box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/*styla footer */
+footer{
+    margin-top: 2rem;
+    background:rgb(13, 24, 48);
+    color:#fff;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: rgb(52, 111, 179);
+    color: #fff;
+}
+.fa-instagram{
+    background: rgb(179, 120, 52);
+    color: #fff;
+   
+}
+
+.fa:hover{
+    color: #fff;
+    background: #666;
+}
+
+.icons{
+    display: inline-block;
+    padding: 10px;
+}
+
+/*för indexsidan*/
+.index{
+    grid-area: head-section;
+    min-height: 400px; 
+    background: url(https://images.pexels.com/photos/1374122/pexels-photo-1374122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); /*bilden blir till bakgrund*/
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display:flex; /*använder flex för att align saker i  elementen som skapats med grid */
+    flex-direction: column;
+    align-items: start;
+    justify-content:flex-end;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    
+}
+
+.destinations{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.destinations p{
+    padding: 10px;
+}
+
+.des1{
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    margin: 5px;
+    
+}
+
+.des2{
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    margin: 5px; 
+  
+}
+
+.des3{
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    margin: 5px;
+}
+
+.button{
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0.25em 0;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.button:hover{
+    background: #666;
+    color: #fff;
+}
+/* index slut*/
+
+/* om oss */
+.omoss{
+    grid-area: head-section;
+    min-height: 400px; 
+    background: url(https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); /*bilden blir till bakgrund*/
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display:flex; /*använder flex för att align saker i  elementen som skapats med grid */
+    flex-direction: column;
+    align-items: start;
+    justify-content:flex-end;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    
+}
+
+/* varma desitnationer (mallorca)*/
+/* Top-Container */
+.top-container-mallorca{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    'top-box-a head-section-mallorca head-section-mallorca' /* Här skapas ytor som heter top-box-a head-section head-section*/
+    'top-box-b head-section-mallorca head-section-mallorca' /* Här skapas ytor som heter top-box.b head-section head-section */
+}
+
+
+/*asigning grid area headsection*/ 
+.head-section-mallorca{
+    grid-area: head-section-mallorca;
+    min-height: 400px;
+    background: url(https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80); /*bilden blir till bakgrund*/
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display:flex; /*använder flex för att align saker i  elementen som skapats med grid */
+    flex-direction: column;
+    align-items: start;
+    justify-content:flex-end;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+}
+.head-section-mallorca h1 {
+    font-size: 6rem;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+}
+.head-section-mallorca p{
+font-size: 1.3rem;
+margin-top: 0;
+color:#fff;
+
+}
+
+/*styla båda topbox */
+
+.top-box{
+    font-size:30px;
+    background:#ddd;
+    display: grid;
+    border-radius: 50px;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0 1px 5px rgb(40, 48, 61);
+    padding:1.5rem;
+
+}
+/*styla top-box A */
+.top-box-a{
+    background: rgb(192, 214, 238);
+    font-size:20px;      
+}
+
+/*styla top-box B */
+.top-box-b{
+    background: rgb(192, 214, 238);
+    font-size:20px;
+}
+
+
+/*styla båda top-boxs text */
+.top-box-text{
+    color:#333;
+    font-size: 25px;
+}
+
+/*styla båda knapparna */
+.buttonTopBoxes{
+    background-color: #333;
+    color: #fff;
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;  
+    background: rgb(160, 4, 4);
+    box-shadow: 0 1px 5px rgb(43, 13, 13);
+    border-radius: 5px;
+}
+
+/*Hover för boxarnas knappar */
+.top-box a:hover{
+    color: #fff;
+    background: rgb(187, 65, 65);
+
+}
+
+/*styla info rutan */
+.info-mallorca{
+display: grid;
+border-radius: 20px;
+box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+background:rgb(188, 214, 245);
+grid-gap:30px;
+grid-template-columns: repeat(2,1fr);/* delar den i två columner */
+padding: 3rem;
+}
+
+/*styla portfolio */
+.portfolio-mallorca
+{
+ display: grid;
+ grid-gap: 10px;
+ grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+
+/*styla portfolios bilder img */
+
+.portfolio-mallorca img{
+ width: 100%; /* bilderna ska fylla ut hela dess "container" */
+ box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+/* varma desitnationer (mallorca slut)*/
+
+/*hemsidans styling är klar ovanför */
+
+/*media queries nedan */
+/* allt som läggs i denna kod påverkas bara om sidan är 700px  */
+@media only screen and (max-width: 700px){
+    .top-container{
+        grid-template-areas:
+        'head-section head-section'     
+    }
+
+    /*gör att h1 kryper vid 600px eller mindre */
+    .head-section h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+        color: rgb(255, 255, 255);
+    }
+
+    /*gör homepage,om oss, kontakt blir 1fr var och läggs under  varandra */
+    .top-nav ul{
+        grid-template-columns: 1fr;
+    }
+
+    .destinations{ /*så att de tre kolumnerna på indexsidan hamnar under varandra*/
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+/*gör att info rutan med bild blir 1 fr som ett stort "block" */
+    .info{
+        grid-template-columns: 1fr;
+    }
+
+    #logga{
+        max-width: 100%;
+    }
+}
+/* allt som läggs i denna kod påverkas bara om sidan är 500px  */
+@media only screen and (max-width: 500px){
+    .top-container{
+        grid-template-areas:
+        'head-section'    
+    }
+    /* gör att bilden automatiskt "krymper" ju mindre skärmen är*/
+    .head-section{
+    min-height: auto;
+    }
+    .head-section h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+    }
+
+    .head-section-mallorca{
+        min-height: auto;
+    }
+    
+     /* gör att h1 rubrik krymper*/
+    .head-section-mallorca h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+        color: rgb(255, 255, 255);
+    }
+    }
+
+/* media queries varma destinationer (mallorca)*/
+@media only screen and (max-width: 700px){
+    .top-container-mallorca{
+        grid-template-areas:
+        'head-section-mallorca head-section-mallorca'
+        'top-box-a top-box-b'
+    }
+
+/*gör att info rutan med bild blir 1 fr som ett stort "block" */
+    .info-mallorca{
+        grid-template-columns: 1fr;
+    }
+
+}
+/* allt som läggs i denna kod påverkas bara om sidan är 500px  */
+@media only screen and (max-width: 500px){
+    .top-container-mallorca{
+        grid-template-areas:
+        'head-section-mallorca'
+        'top-box-a'
+        'top-box-b'
+    }
+
+       /* gör att bilden automatiskt "krymper" ju mindre skärmen är*/
+.head-section-mallorca{
+    min-height: auto;
+}
+
+ /* gör att h1 rubrik krymper*/
+.head-section-mallorca h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+}
+}
+
+/* KONTAKT SIDA */
+.kontakt{
+    grid-area: head-section;
+    min-height: 400px; 
+    background: url(https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); /*bilden blir till bakgrund*/
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display:flex; /*använder flex för att align saker i  elementen som skapats med grid */
+    flex-direction: column;
+    align-items: start;
+    justify-content:flex-end;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    
+}
+
+#section{
+    padding: 2em 1em 1em;
+}
+ 
+#section ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+#section li{
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+}
+ 
+.card-content{
+    padding: 1.5em;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.iconpics {
+    max-width: 40px;
+    margin: auto;
+}
+.divskontakt
+{
+    background-color: cornsilk;
+    padding: 1.5em;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    height: 370px;
+    text-align: center;
+}
+
+.linkkontakt {
+    color: inherit;
+    text-decoration: none;
+}
+
+.linkkontakt:hover{
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 700px){
+    .gridkontakt{
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;    
+    }
+ 
+    #navigering{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        min-height: 60px;
+    }
+ 
+    .showcase{
+        padding-bottom: 20px;
+    }
+ 
+    #navigering img{
+        max-width: 100px;
+        padding: 10px;
+    }
+ 
+    .content-wrap, #section ul{
+        grid-column: 2 / 4;
+        grid-row: 2;
+    }
+ 
+    #section ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1em;
+    }
+     
+}
+
