@@ -83,20 +83,20 @@ color:#fff;
     display: grid;
     grid-gap: 20px;
     grid-template-areas:
-    'head-section head-section head-section ' /* Här skapas ytor som heter showcase showcase top-box.a*/
-    'head-section head-section head-section ' /* Här skapas ytor som heter showcase showcase top-box.b */
+    'head-section head-section head-section ' /* Här skapas ytor som heter head-section head-section head-section */
+    'head-section head-section head-section ' /* Här skapas ytor som heter head-section head-section head-section */
 }
 /*asigning grid area*/
 
-/*asigning grid area showcase*/ 
+/*asigning grid area head-seaction*/ 
 .head-section{
     grid-area: head-section;
-    min-height: 400px; /*ökar "arean??"*/
+    min-height: 400px; 
     background: url( https://images.unsplash.com/photo-1517660895948-131a6d6c55d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2693&q=80); /*bilden blir till bakgrund*/
     background-size: cover;
     background-position: center;
     padding: 3rem;
-    display:flex; /*använder flex för att align saker i  elementen som skapats med grid */
+    display:flex; /*använder flex för att placera saker i  elementen som skapats med grid */
     flex-direction: column;
     align-items: start;
     justify-content:flex-end;
@@ -264,12 +264,12 @@ footer{
     display: grid;
     grid-gap: 20px;
     grid-template-areas:
-    'top-box-a head-section-mallorca head-section-mallorca' /* Här skapas ytor som heter top-box-a head-section head-section*/
-    'top-box-b head-section-mallorca head-section-mallorca' /* Här skapas ytor som heter top-box.b head-section head-section */
+    'top-box-a head-section-mallorca head-section-mallorca' /* Här skapas ytor som heter top-box-a head-section-mallorca head-section-mallorca*/
+    'top-box-b head-section-mallorca head-section-mallorca' /* Här skapas ytor som heter top-box.b head-section-mallorca head-section-mallorca */
 }
 
 
-/*asigning grid area headsection*/ 
+/*asigning grid area headsection-mallorca*/ 
 .head-section-mallorca{
     grid-area: head-section-mallorca;
     min-height: 400px;
@@ -277,7 +277,7 @@ footer{
     background-size: cover;
     background-position: center;
     padding: 3rem;
-    display:flex; /*använder flex för att align saker i  elementen som skapats med grid */
+    display:flex; /*använder flex för att placera saker i  elementen som skapats med grid */
     flex-direction: column;
     align-items: start;
     justify-content:flex-end;
@@ -482,7 +482,7 @@ padding: 3rem;
     background-size: cover;
     background-position: center;
     padding: 3rem;
-    display:flex; /*använder flex för att align saker i  elementen som skapats med grid */
+    display:flex; /*använder flex för att placera saker i  elementen som skapats med grid */
     flex-direction: column;
     align-items: start;
     justify-content:flex-end;
