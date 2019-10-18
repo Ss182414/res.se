@@ -78,6 +78,7 @@ color:#fff;
     border: #666 1px solid;
 }
 
+/* ALPERNA */
 /* Top Container */
 .top-container{
     display: grid;
@@ -117,7 +118,7 @@ color:#fff;
 
 }
 
-/*styla info rutan */
+/*styla info rutan för ALPERNA */
 .info{
 display: grid;
 border-radius: 20px;
