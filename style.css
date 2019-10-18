@@ -429,17 +429,6 @@ padding: 3rem;
     margin-bottom: 0;
     color: rgb(255, 255, 255);
     }
-
-    .head-section-mallorca{
-        min-height: auto;
-    }
-    
-     /* gör att h1 rubrik krymper*/
-    .head-section-mallorca h1 {
-        font-size: 3rem;
-        margin-bottom: 0;
-        color: rgb(255, 255, 255);
-    }
     }
 
 /* media queries varma destinationer (mallorca)*/
