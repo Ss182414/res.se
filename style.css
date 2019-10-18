@@ -311,12 +311,14 @@ color:#fff;
 }
 /*styla top-box A */
 .top-box-a{
+    grid-area: top-box-a;
     background: rgb(192, 214, 238);
     font-size:20px;      
 }
 
 /*styla top-box B */
 .top-box-b{
+    grid-area: top-box-b;
     background: rgb(192, 214, 238);
     font-size:20px;
 }
