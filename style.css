@@ -32,7 +32,7 @@ img{
     min-height: 100px;
 }
 
-/* styling för varje enskild a-länk, homepage,om oss, kontakt */
+/* styling för varje a-länk, homepage,om oss, kontakt */
 .top-nav a{
     background-color: #333;
     display: block; 
@@ -42,7 +42,7 @@ img{
     color:#fff;
     text-transform: uppercase; /* text stora bokstäver */
     font-size: 1.1rem;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);; /* ger illusion av en box/ruta */
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     margin:10px;
 }
 
@@ -50,13 +50,13 @@ img{
 #logga {
     background:url(https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?cs=srgb&dl=adventure-blur-close-up-346885.jpg&fm=jpg);
     display: block; 
-    text-decoration: none; /* inga underlines */
+    text-decoration: none; /* inga understräck */
     padding: 1em 2em;
     text-align: center;
     color:#fff;
     text-transform: uppercase; /* text stora bokstäver */
     font-size: 1.1rem;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);; /* ger illusion av en box/ruta */
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     margin:10px;
     background-size: cover;
     background-position: center;
@@ -86,7 +86,7 @@ color:#fff;
     'head-section head-section head-section ' /* Här skapas ytor som heter head-section head-section head-section */
     'head-section head-section head-section ' /* Här skapas ytor som heter head-section head-section head-section */
 }
-/*asigning grid area*/
+
 
 /*asigning grid area head-seaction*/ 
 .head-section{
