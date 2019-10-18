@@ -124,7 +124,7 @@ border-radius: 20px;
 box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 background:rgb(188, 214, 245);
 grid-gap:30px;
-grid-template-columns: repeat(3,1fr);/* delar den i två columner */
+grid-template-columns: repeat(3,1fr);
 padding: 3rem;
 }
 
@@ -153,6 +153,7 @@ footer{
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
+/*styla iconer */
 
 .fa {
     padding: 10px;
@@ -250,7 +251,7 @@ footer{
     background-size: cover;
     background-position: center;
     padding: 3rem;
-    display:flex; /*använder flex för att align saker i  elementen som skapats med grid */
+    display:flex; /*använder flex för att placera saker i  elementen som skapats med grid */
     flex-direction: column;
     align-items: start;
     justify-content:flex-end;
@@ -269,7 +270,7 @@ footer{
 }
 
 
-/*asigning grid area headsection-mallorca*/ 
+/*Tilldela grid area head-section-mallorca*/ 
 .head-section-mallorca{
     grid-area: head-section-mallorca;
     min-height: 400px;
@@ -376,7 +377,7 @@ padding: 3rem;
 }
 /* varma desitnationer (mallorca slut)*/
 
-/*hemsidans styling är klar ovanför */
+
 
 /*media queries nedan */
 /* allt som läggs i denna kod påverkas bara om sidan är 700px  */
@@ -386,14 +387,14 @@ padding: 3rem;
         'head-section head-section'     
     }
 
-    /*gör att h1 kryper vid 600px eller mindre */
+    /*gör att h1 kryper vid 700px */
     .head-section h1 {
         font-size: 3rem;
         margin-bottom: 0;
         color: rgb(255, 255, 255);
     }
 
-    /*gör homepage,om oss, kontakt blir 1fr var och läggs under  varandra */
+    /*gör home,om oss, kontakt blir 1fr var och läggs under  varandra */
     .top-nav ul{
         grid-template-columns: 1fr;
     }
@@ -403,7 +404,7 @@ padding: 3rem;
         grid-template-columns: 1fr;
     }
 
-/*gör att info rutan med bild blir 1 fr som ett stort "block" */
+/*gör att inforutan med bild blir 1 fr som ett stort "block" */
     .info{
         grid-template-columns: 1fr;
     }
